@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 CONSOLEGROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-CONSOLEGROQ_API_KEY = os.getenv("CONSOLEGROQ_API_KEY")
+CONSOLEGROQ_API_KEY = os.getenv("VITE_API_KEY")
 
 def extract_text_from_pdf(pdf_file, max_characters=7000):
      pdf_reader = pypdf.PdfReader(pdf_file)
